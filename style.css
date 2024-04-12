@@ -354,18 +354,18 @@ table tr th div{
 #五星{
 	background-color: rgb(255, 230, 0);
 	position: absolute;
-	left: 0px;
-	width: 100%;
+	left: 5px;
+	width: 90%;
 	height: 5px;
-	bottom: -5px;
+	bottom: 5px;
 }
 #四星{
 	background-color: rgb(240, 6, 248);
 	position: absolute;
-	left: 0px;
-	width: 100%;
+	left: 5px;
+	width: 90%;
 	height: 5px;
-	bottom: -5px;
+	bottom: 5px;
 }
 #SS{background-color: red;}
 #S{background-color: yellow;}
