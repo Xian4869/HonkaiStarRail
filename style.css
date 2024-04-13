@@ -307,6 +307,8 @@ table div{
 	padding: 0px;
 }
 table tr th img{
+	position: relative;
+	top: 5px;
 	width: 100px;
 	height:100px;
 }
@@ -325,7 +327,11 @@ table tr th div{
 #AA{background-color: deepskyblue;}
 #A{background-color: limegreen;}
 #C{background-color: lightgrey;}  
-
+#遗器{
+	position: relative;
+	top: -40px;
+	font-size: 30px;
+}
 /* 电脑端 */
 table{
 	table-layout: fixed;
@@ -361,7 +367,7 @@ p2{
 }
 #元素{
 	position: absolute;
-	top: 3px;
+	top: 9px;
 	left: 3px;
 	width: 24px;
 	height: 24px;
