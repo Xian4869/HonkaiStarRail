@@ -7,7 +7,7 @@ body{
 }
 .content{
 	background-color: #333333;
-	width: 500px;
+	width: auto;
 	padding: 30px;
 	position: absolute;
 	top: 50%;
@@ -281,12 +281,17 @@ a{
 		display: flex;
 	}
 }
-
-table{
-	table-layout: fixed;
-	font-size: 24px;
-	width: 100%;
+.text {
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+	padding: 5px;
+	font-size: 25px; /* 字体大小，可以根据需要调整 */
 }
+
+/* 多端 */
 thead{
 	float: left;
 	display: table;
@@ -295,10 +300,75 @@ thead{
 tbody{
 	display: table;
 	width: 50%;
-	
 }
-@media screen and (max-width: 900px){
+table div{
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+table tr th img{
+	width: 100px;
+	height:100px;
+}
+p3{
+	color: red;
+}
+table tr th div{
+	position: relative;
+}
+#人物{
+	padding: auto;
+}
+#SS{background-color: red;}
+#S{background-color: yellow;}
+#S-{background-color: peachpuff;}
+#AA{background-color: deepskyblue;}
+#A{background-color: limegreen;}
+#C{background-color: lightgrey;}  
 
+/* 电脑端 */
+table{
+	table-layout: fixed;
+	font-size: 24px;
+	width: 100%;
+}
+table tr th div img{
+	width: 100%;
+	height:100%;
+}
+p{
+	font-size: 30px;
+}
+p2{
+	font-size: 30px;
+	color:red
+}
+#五星{
+	background-color: rgb(255, 230, 0);
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	height: 5px;
+	bottom: 5px;
+}
+#四星{
+	background-color: rgb(240, 6, 248);
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	height: 5px;
+	bottom: 5px;
+}
+#元素{
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 24px;
+	height: 24px;
+	z-index: 3;
+}
+/* 手机端 */
+@media screen and (max-width: 900px){
 table{
 	table-layout: fixed;
 	font-size: 16px;
@@ -348,99 +418,3 @@ th p2{
 	color:red
 }
 }
-
-
-table div{
-	display: inline-block;
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
-  border-radius: 20px;
-}
-
-table tr th img{
-	width: 100px;
-	height:100px;
-}
-#五星{
-	background-color: rgb(255, 230, 0);
-	position: absolute;
-	left: 0px;
-	width: 100px;
-	height: 5px;
-	bottom: 5px;
-}
-#四星{
-	background-color: rgb(240, 6, 248);
-	position: absolute;
-	left: 0px;
-	width: 100px;
-	height: 5px;
-	bottom: 5px;
-}
-
-table div a{
-	display: inline-block;
-}
-p{
-	font-size: 30px;
-}
-p2{
-	font-size: 30px;
-	color:red
-}
-p3{
-	color: red;
-}
-table tr th div{
-	position: relative;
-}
-
-#元素{
-	position: absolute;
-	top: 3px;
-	left: 3px;
-	width: 24px;
-	height: 24px;
-	z-index: 3;
-}
-#人物{
-	padding: auto;
-}
-#SS{background-color: red;}
-#S{background-color: yellow;}
-#S-{background-color: peachpuff;}
-#AA{background-color: deepskyblue;}
-#A{background-color: limegreen;}
-#C{background-color: lightgrey;}  
-
-#武器1{
-	position: absolute;
-	clip-path: polygon(0% 100%,100% 100%,0% 0%,0% 0%);
-}
-
-#圣遗物{
-	position: relative;
-	top: -40px;
-	font-size: 30px;
-}
-#攻击1{
-	position: absolute;
-	clip: rect(0px 50px 50px 0px);
-}
-
-#照片{
-	height: 120px;
-	width: 120px;
-}
-
-
-    .text {
-		position: absolute;
-		top: 75%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		color: black;
-		padding: 5px;
-		font-size: 25px; /* 字体大小，可以根据需要调整 */
-    }
