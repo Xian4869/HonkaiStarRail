@@ -423,4 +423,10 @@ th p2{
 	font-size: 20px;
 	color:red
 }
+table tr th img{
+	position: relative;
+	top: 5px;
+	width: 75px;
+	height:75px;
+}
 }
