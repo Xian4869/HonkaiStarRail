@@ -305,28 +305,20 @@ thead{
 tbody{
 	width: 100%;
 }
-table tr th img{
-	width: 70px;
-	height:70px;
-}
-#五星{
-	background-color: rgb(255, 230, 0);
-	position: absolute;
-	left: 5px;
-	width: 90%;
-	height: 5px;
-	bottom: 5px;
-}
-#四星{
-	background-color: rgb(240, 6, 248);
-	position: absolute;
-	left: 5px;
-	width: 90%;
-	height: 5px;
-	bottom: 5px;
+table tr th div img{
+	width: 75px;
+	height:75px;
 }
 }
 
+
+table div{
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+  border-radius: 20px;
+}
 
 table tr th img{
 	width: 90px;
@@ -347,16 +339,6 @@ table tr th img{
 	width: 90%;
 	height: 5px;
 	bottom: 5px;
-}
-
-table div{
-	width: 100px;
-	height:100px;
-	display: inline-block;
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
-  border-radius: 20px;
 }
 
 table div a{
