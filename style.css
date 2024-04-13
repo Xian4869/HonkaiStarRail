@@ -7,8 +7,8 @@ body{
 }
 .content{
 	background-color: #333333;
-	width: 666px;
-	padding: 100px;
+	width: 500px;
+	padding: 30px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -346,22 +346,22 @@ table div{
 }
 
 table tr th img{
-	width: 90px;
-	height:90px;
+	width: 100px;
+	height:100px;
 }
 #五星{
 	background-color: rgb(255, 230, 0);
 	position: absolute;
-	left: 5px;
-	width: 90%;
+	left: 0px;
+	width: 100px;
 	height: 5px;
 	bottom: 5px;
 }
 #四星{
 	background-color: rgb(240, 6, 248);
 	position: absolute;
-	left: 5px;
-	width: 90%;
+	left: 0px;
+	width: 100px;
 	height: 5px;
 	bottom: 5px;
 }
