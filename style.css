@@ -305,12 +305,48 @@ thead{
 tbody{
 	width: 100%;
 }
+table tr th img{
+	width: 70px;
+	height:70px;
+}
+#五星{
+	background-color: rgb(255, 230, 0);
+	position: absolute;
+	left: 5px;
+	width: 90%;
+	height: 5px;
+	bottom: 5px;
+}
+#四星{
+	background-color: rgb(240, 6, 248);
+	position: absolute;
+	left: 5px;
+	width: 90%;
+	height: 5px;
+	bottom: 5px;
+}
 }
 
 
 table tr th img{
 	width: 90px;
 	height:90px;
+}
+#五星{
+	background-color: rgb(255, 230, 0);
+	position: absolute;
+	left: 5px;
+	width: 90%;
+	height: 5px;
+	bottom: 5px;
+}
+#四星{
+	background-color: rgb(240, 6, 248);
+	position: absolute;
+	left: 5px;
+	width: 90%;
+	height: 5px;
+	bottom: 5px;
 }
 
 table div{
@@ -350,22 +386,6 @@ table tr th div{
 }
 #人物{
 	padding: auto;
-}
-#五星{
-	background-color: rgb(255, 230, 0);
-	position: absolute;
-	left: 5px;
-	width: 90%;
-	height: 5px;
-	bottom: 5px;
-}
-#四星{
-	background-color: rgb(240, 6, 248);
-	position: absolute;
-	left: 5px;
-	width: 90%;
-	height: 5px;
-	bottom: 5px;
 }
 #SS{background-color: red;}
 #S{background-color: yellow;}
