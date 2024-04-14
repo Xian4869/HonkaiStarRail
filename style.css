@@ -450,14 +450,14 @@ th #遗器{
 }
 }
 table tr th div img{
-	width: 45px;
-	height:45px;
+	width: 60px;
+	height:60px;
 }
 th #五星{
 	background-color: rgb(255, 230, 0);
 	position: absolute;
 	left: 0px;
-	width: 45px;
+	width: 60px;
 	height: 5px;
 	bottom: -4px;
 }
@@ -465,16 +465,16 @@ th #四星{
 	background-color: rgb(240, 6, 248);
 	position: absolute;
 	left: 0px;
-	width: 45px;
+	width: 60px;
 	height: 5px;
 	bottom: -4px;
 }
 th #元素{
 	position: absolute;
-	top: 8px;
-	left: 2px;
-	width: 9px;
-	height: 9px;
+	top: 10px;
+	left: 3px;
+	width: 12px;
+	height: 12px;
 	z-index: 3;
 }
 }
