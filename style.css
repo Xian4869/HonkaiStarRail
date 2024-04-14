@@ -438,8 +438,6 @@ th #遗器{
 }
 @media screen and (max-width: 700px){
 table tr th img{
-	position: relative;
-	top: 5px;
 	width: 45px;
 	height:45px;
 }
