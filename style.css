@@ -344,10 +344,10 @@ table tr th div img{
 	height:100%;
 }
 p{
-	font-size: 30px;
+	font-size: 26px;
 }
 p2{
-	font-size: 30px;
+	font-size: 26px;
 	color:red
 }
 #五星{
@@ -411,7 +411,7 @@ th #四星{
 }
 th #元素{
 	position: absolute;
-	top: 3px;
+	top: 10px;
 	left: 3px;
 	width: 16px;
 	height: 16px;
