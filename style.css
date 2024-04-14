@@ -427,12 +427,12 @@ th p2{
 table tr th img{
 	position: relative;
 	top: 5px;
-	width: 60px;
-	height:60px;
+	width: 55px;
+	height:55px;
 }
 th #遗器{
 	position: relative;
-	top: -25px;
-	font-size: 16px;
+	top: -20px;
+	font-size: 15px;
 }
 }
