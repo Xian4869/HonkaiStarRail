@@ -281,15 +281,6 @@ a{
 		display: flex;
 	}
 }
-.text {
-	position: absolute;
-	top: 75%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: black;
-	padding: 5px;
-	font-size: 25px; /* 字体大小，可以根据需要调整 */
-}
 
 /* 多端 */
 thead{
@@ -302,6 +293,7 @@ tbody{
 	width: 50%;
 }
 table div{
+	position: relative;
 	display: inline-block;
 	margin: 0px;
 	padding: 0px;
@@ -314,9 +306,6 @@ table tr th img{
 }
 p3{
 	color: red;
-}
-table tr th div{
-	position: relative;
 }
 #人物{
 	padding: auto;
