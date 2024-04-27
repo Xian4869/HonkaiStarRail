@@ -416,7 +416,6 @@ th p2{
 }
 table tr th img{
 	position: relative;
-	top: 5px;
 	width: 80px;
 	height:80px;
 }
@@ -437,12 +436,15 @@ th #遗器{
 }
 }
 table tr th div img{
+	position: relative;
+	top: 0px;
 	width: 60px;
 	height:60px;
 }
 th #五星{
 	background-color: rgb(255, 230, 0);
 	position: absolute;
+	top: 60px;
 	left: 0px;
 	width: 60px;
 	height: 5px;
@@ -451,6 +453,7 @@ th #五星{
 th #四星{
 	background-color: rgb(240, 6, 248);
 	position: absolute;
+	top: 60px;
 	left: 0px;
 	width: 60px;
 	height: 5px;
