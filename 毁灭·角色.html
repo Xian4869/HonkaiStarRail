@@ -7,6 +7,23 @@
    <link rel="stylesheet" type="text/css" href="style.css">
    <link id="icon" rel="shortcut icon" href="logo.png">
 </head>
+<script>
+   window.onload = function(){
+      var audio = document.getElementById('music');
+         audio.start();
+   }
+   function stop(){
+      var audio = document.getElementById('music');
+      if (audio.start){
+         document.getElementById('musicImg').src="流萤.png";
+      }
+      else{
+         audio.pause()
+         audio.curruntTime = 0;
+         document.getElementById('musicImg').src="流萤.png"
+      }
+   }
+</script>
 <body>
    <header class="header">
       <div class="container">
@@ -72,326 +89,327 @@
    <br><br><br><br>
 <table border="1" cellpadding="0" cellspacing="0">
    <thead>
-      <!-- <div><!-- 流萤 --
-         <tr><th><div><!-- 流萤 --
-                  <img id="人物" src="角色/流萤.png">
-                  <img id="元素" src="元素/火.png">
-                  <span id="五星"></span></div></th>
-            <th><p2>流萤</p2><hr>功能辅<hr><p>70突破</p></th>
-            <th colspan="2">泛用功能辅<br>拉条 产点<br>加攻 暴伤 增伤</th></tr>
-         <tr><th>战技>大招>天赋<br>暴伤>抵抗</th>
+      <div><!-- 流萤 -->
+         <audio id="music" src="videoplayback.m4a" loop autoplay></audio>
+         <tr><th><div><!-- 流萤 -->
+                  <img id="背景" src="角色/金色.png">
+                  <img id="人物" src="角色/流萤.png"  onclick="stop()">
+                  <img id="元素" src="元素/火.png"></div></th>
+            <th><p2>流萤</p2><hr>主C<hr><p>80</p></th>
+            <th colspan="2">超击破驾驶员<br><br></th></tr>
+         <tr><th><hr>?</th>
             <th>混沌</th><th>虚构</th><th>副本</th></tr>
          <tr><th>关键星魂: </th>
-            <th id="SS">S+</th>
-            <th id="SS">S+</th>
-            <th id="SS">S+</th></tr>
-         <tr><th><div><!-- 角色 --
-                  <img id="人物" src="角色/角色.png">
-                  <img id="元素" src="元素/量子.png">
-                  <span id="五星"></span></div></th>
-            <th><div><!-- 角色 --
-                  <img id="人物" src="角色/角色.png">
-                  <img id="元素" src="元素/量子.png">
-                  <span id="五星"></span></div></th>
-            <th><div><!-- 角色 --
-                  <img id="人物" src="角色/角色.png">
-                  <img id="元素" src="元素/量子.png">
-                  <span id="五星"></span></div></th>
-            <th><div><!-- 角色 --
-                  <img id="人物" src="角色/角色.png">
-                  <img id="元素" src="元素/量子.png">
-                  <span id="五星"></span></div></th></tr>
-         <tr><th colspan="4">配队思路: </th></tr>
-         <tr><th colspan="4"></th></tr>
-         <tr><th style="background-color: black; font-size: 4px;" colspan="4">5</th></tr></div> -->
+            <th id="？">？</th>
+            <th id="？">？</th>
+            <th id="？">？</th></tr>
+         <tr><th><div><!-- 流萤 -->
+                  <img id="背景" src="角色/金色.png">
+                  <img id="人物" src="角色/流萤.png" onclick="stop()">
+                  <img id="元素" src="元素/火.png"></div></th>
+            <th><div><!-- 阮•梅 -->
+                  <img id="背景" src="角色/金色.png">
+                  <img id="人物" src="角色/阮•梅.png">
+                  <img id="元素" src="元素/冰.png"></div></th>
+            <th><div><!-- 开拓者•同谐 -->
+                  <img id="背景" src="角色/金色.png">
+                  <img id="人物" src="角色/开拓者•同谐.png">
+                  <img id="元素" src="元素/虚数.png"></div></th>  
+            <th><div><!-- 加拉赫 -->
+                  <img id="背景" src="角色/紫色.png">
+                  <img id="人物" src="角色/加拉赫.png">
+                  <img id="元素" src="元素/火.png"></div></th></tr>
+         <tr><th colspan="4"><p3>配队思路：</p3>超击破体系</th></tr>
+         <tr><th colspan="4">?</th></tr>
+         <tr><th style="background-color: black; font-size: 4px;" colspan="4">5</th></tr></div>
       <div><!-- 镜流 -->
          <tr><th><div><!-- 镜流 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/镜流.png">
-                  <img id="元素" src="元素/冰.png">
-                  <span id="五星"></span></div></th>
-            <th><p2>镜流</p2><hr>主C<hr><p>80</p></th>
+                  <img id="元素" src="元素/冰.png"></div></th>
+            <th><p>镜流</p2><hr>主C<hr><p>80</p></th>
             <th colspan="2">常规主C<br>周期性爆发输出</th></tr>
-         <tr><th>战技>天赋>大招<br>暴伤>速度</th>
+         <tr><th>战技>天赋>大招<hr>暴伤>速度</th>
             <th>混沌</th><th>虚构</th><th>副本</th></tr>
          <tr><th>关键星魂: 1 6</th>
-            <th id="SS">S+</th>
+            <th id="S-">S-</th>
             <th id="AA">A+</th>
             <th id="S">S</th></tr>
          <tr><th><div><!-- 镜流 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/镜流.png">
-                  <img id="元素" src="元素/冰.png">
-                  <span id="五星"></span></div></th>
-            <th><div><!-- 阮•梅 -->
-                  <img id="人物" src="角色/阮•梅.png">
-                  <img id="元素" src="元素/冰.png">
-                  <span id="五星"></span></div></th>
-            <th><div><!-- 布洛妮娅 -->
-                  <img id="人物" src="角色/布洛妮娅.png">
-                  <img id="元素" src="元素/风.png">
-                  <span id="五星"></span></div></th>
-            <th><div><!-- 罗刹 -->
-                  <img id="人物" src="角色/罗刹.png">
-                  <img id="元素" src="元素/虚数.png">
-                  <span id="五星"></span></div></th></tr>
-         <tr><th colspan="4">配队思路：镜流适配低速鸭 无鸭则停云 无阮梅则替换为佩拉</th></tr>
-         <tr><th colspan="4">爆发能力极强的周期性角色 配合可提速的板鸭几乎完美解决角色缺憾 0+1配置最强的主C <p3>本期下半弱冰环境 比较适合镜流</p></th></tr>
+                  <img id="元素" src="元素/冰.png"></div></th>
+            <th><div><!-- 花火 -->
+                  <img id="背景" src="角色/金色.png">
+                  <img id="人物" src="角色/花火.png">
+                  <img id="元素" src="元素/量子.png"></div></th>
+            <th><div><!-- 停云 -->
+                  <img id="背景" src="角色/紫色.png">
+                  <img id="人物" src="角色/停云.png">
+                  <img id="元素" src="元素/雷.png"></div></th>
+            <th><div><!-- 藿藿 -->
+                  <img id="背景" src="角色/金色.png">
+                  <img id="人物" src="角色/藿藿.png">
+                  <img id="元素" src="元素/风.png"></div></th></tr>
+         <tr><th colspan="4"><p3>配队思路：</p3>目前花停藿体系表现最佳 如果给另一队用了则继续板鸭</th></tr>
+         <tr><th colspan="4">爆发能力极强的周期性角色 目前最强形态为搭配花停藿的双充拉条体系 也可以用传统的镜鸭体系</th></tr>
          <tr><th style="background-color: black; font-size: 4px;" colspan="4">5</th></tr></div>
       <div><!-- 丹恒•饮月 -->
          <tr><th><div><!-- 丹恒•饮月 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/丹恒•饮月.png">
-                  <img id="元素" src="元素/虚数.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/虚数.png"></div></th>
             <th><p>丹恒•饮月</p><hr>主C<hr><p>80</p></th>
             <th colspan="2">常规主C<br>高耗点</th></tr>
-         <tr><th>普攻>大招>天赋>战技<br>暴击>虚数</th>
+         <tr><th>普攻>大招>天赋>战技<hr>暴击>虚数</th>
             <th>混沌</th><th>虚构</th><th>副本</th></tr>
          <tr><th>关键星魂: 2 6</th>
             <th id="SS">S+</th>
             <th id="AA">A+</th>
             <th id="S">S</th></tr>
          <tr><th><div><!-- 丹恒•饮月 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/丹恒•饮月.png">
-                  <img id="元素" src="元素/虚数.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/虚数.png"></div></th>
             <th><div><!-- 花火 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/花火.png">
-                  <img id="元素" src="元素/量子.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/量子.png"></div></th>
             <th><div><!-- 停云 -->
+                  <img id="背景" src="角色/紫色.png">
                   <img id="人物" src="角色/停云.png">
-                  <img id="元素" src="元素/雷.png">
-                  <span id="四星"></span></div></th>
+                  <img id="元素" src="元素/雷.png"></div></th>
             <th><div><!-- 藿藿 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/藿藿.png">
-                  <img id="元素" src="元素/风.png">
-                  <span id="五星"></span></div></th></tr>
-         <tr><th colspan="4">配队思路：停藿的双充搭配非常契合饮月 也可以用寒鸦驭空等角色</th></tr>
-         <tr><th colspan="4">输出能力点满的超级大核 对战战技点需求极高 2+1配置下的最强主C 大世界秘技跑图体验极佳 <p3>本期上半算半个弱虚数环境</p></th></tr>
+                  <img id="元素" src="元素/风.png"></div></th></tr>
+         <tr><th colspan="4"><p3>配队思路：</p3>停藿的双充搭配非常契合饮月 花火是拯救饮月的神</th></tr>
+         <tr><th colspan="4">输出能力点满的超级大核 对战战技点需求极高 2+1配置下的最强主C 大世界秘技跑图体验极佳</th></tr>
          <tr><th style="background-color: black; font-size: 4px;" colspan="4">5</th></tr></div>
       <div><!-- 刃 -->
          <tr><th><div><!-- 刃 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/刃.png">
-                  <img id="元素" src="元素/风.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/风.png"></div></th>
             <th><p2>刃</p2><hr>主C/副C<hr><p>80</p></th>
             <th colspan="2">常规主C/副C<br>擅长多目标环境</th></tr>
-         <tr><th>普攻>战技>天赋>大招<br>暴击>生命>抵抗</th>
+         <tr><th>普攻>战技>天赋>大招<hr>暴击>生命>抵抗</th>
             <th>混沌</th><th>虚构</th><th>副本</th></tr>
          <tr><th>关键星魂: 1 6</th>
             <th id="S-">S-</th>
-            <th id="S-">S-</th>
+            <th id="S">S</th>
             <th id="S-">S-</th></tr>
          <tr><th><div><!-- 布洛妮娅 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/布洛妮娅.png">
-                  <img id="元素" src="元素/风.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/风.png"></div></th>
             <th><div><!-- 阮•梅 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/阮•梅.png">
-                  <img id="元素" src="元素/冰.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/冰.png"></div></th>
             <th><div><!-- 刃 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/刃.png">
-                  <img id="元素" src="元素/风.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/风.png"></div></th>
             <th><div><!-- 罗刹 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/罗刹.png">
-                  <img id="元素" src="元素/虚数.png">
-                  <span id="五星"></span></div></th></tr>
-         <tr><th colspan="4">配队思路：刃鸭组合绑定</th></tr>
-         <tr><th colspan="4">高坦度重装输出角色 耗点不多的机制使其配队非常灵活 大多数情况作为主C使用 但也可以转副C 不过对布洛妮娅依赖度很高 <p3>本期无弱风环境 甚至上半风抗</p></th></tr>
+                  <img id="元素" src="元素/虚数.png"></div></th></tr>
+         <tr><th colspan="4"><p3>配队思路：</p3>刃鸭组合绑定</th></tr>
+         <tr><th colspan="4">高坦度重装输出角色 耗点不多的机制使其配队非常灵活 大多数情况作为主C使用 但也可以转副C</th></tr>
          <tr><th style="background-color: black; font-size: 4px;" colspan="4">5</th></tr></div>
       <div><!-- 克拉拉 -->
          <tr><th><div><!-- 克拉拉 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/克拉拉.png">
-                  <img id="元素" src="元素/物理.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/物理.png"></div></th>
             <th><p>克拉拉</p2><hr>副C/主C<hr><p>80</p></th>
             <th colspan="2">泛用抗压副C<br>高压本对策主C</th></tr>
-         <tr><th>天赋>大招>战技=普攻<br>物伤>攻击>生命</th>
+         <tr><th>天赋>大招>战技=普攻<hr>物伤>攻击>生命</th>
             <th>混沌</th><th>虚构</th><th>副本</th></tr>
          <tr><th>关键星魂: 1 6</th>
-            <th id="S-">S-</th>
-            <th id="S-">S-</th>
+            <th id="S">S</th>
+            <th id="S">S</th>
             <th id="AA">A+</th></tr>
-         <tr><th><div><!-- 停云 -->
-                  <img id="人物" src="角色/停云.png">
-                  <img id="元素" src="元素/雷.png">
-                  <span id="四星"></span></div></th>
-            <th><div><!-- 花火 -->
-                  <img id="人物" src="角色/花火.png">
-                  <img id="元素" src="元素/量子.png">
-                  <span id="五星"></span></div></th>
-            <th><div><!-- 克拉拉 -->
-                  <img id="人物" src="角色/克拉拉.png">
-                  <img id="元素" src="元素/物理.png">
-                  <span id="五星"></span></div></th>
-            <th><div><!-- 罗刹 -->
-                  <img id="人物" src="角色/罗刹.png">
-                  <img id="元素" src="元素/虚数.png">
-                  <span id="五星"></span></div></th></tr>
-         <tr><th colspan="4">配队思路：花火加持后的克拉拉表现不俗 也可以用传统的克罗驭</th></tr>
-         <tr><th colspan="4">偏慢速的防守反击角色 实战更推荐作为副C抗压输出 做半个生存位 克罗双人组也可以单拆出来加入其他阵容 攻守兼备</th></tr>
-         <tr><th style="background-color: black; font-size: 4px;" colspan="4">5</th></tr></div>
-      <div><!-- 开拓者 -->
-         <tr><th><div><!-- 开拓者 -->
-                  <img id="人物" src="角色/开拓者•毁灭.png">
-                  <img id="元素" src="元素/物理.png">
-                  <span id="五星"></span></div></th>
-            <th><p>开拓者</p><hr>主C/副C<hr><p>80</p></th>
-            <th colspan="2">常规主C/副C<br>前期过渡</th></tr>
-         <tr><th>大招>战技>天赋>普攻<br>攻击</th>
-            <th>混沌</th><th>虚构</th><th>副本</th></tr>
-         <tr><th>关键星魂: 4 6</th>
-            <th id="C">B</th>
-            <th id="C">B</th>
-            <th id="A">A</th></tr>
          <tr><th><div><!-- 驭空 -->
+                  <img id="背景" src="角色/紫色.png">
                   <img id="人物" src="角色/驭空.png">
-                  <img id="元素" src="元素/虚数.png">
-                  <span id="四星"></span></div></th>
-            <th><div><!-- 开拓者 -->
-                  <img id="人物" src="角色/开拓者•毁灭.png">
-                  <img id="元素" src="元素/物理.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/虚数.png"></div></th>
             <th><div><!-- 克拉拉 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/克拉拉.png">
-                  <img id="元素" src="元素/物理.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/物理.png"></div></th>
+            <th><div><!-- 知更鸟 -->
+                  <img id="背景" src="角色/金色.png">
+                  <img id="人物" src="角色/知更鸟.png">
+                  <img id="元素" src="元素/物理.png"></div></th>
             <th><div><!-- 罗刹 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/罗刹.png">
-                  <img id="元素" src="元素/虚数.png">
-                  <span id="五星"></span></div></th></tr>
-         <tr><th colspan="4">配队思路: 单挂进克罗驭表现尚可 进其他队补伤害或主C亦可</th></tr>
-         <tr><th colspan="4">开局过渡使用的输出角色 前期表现尚可 后续建议培养其他输出角色</th></tr>
+                  <img id="元素" src="元素/虚数.png"></div></th></tr>
+         <tr><th colspan="4"><p3>配队思路：</p3>克罗驭体系回归且完全体 永不乱轴的高契合阵容</th></tr>
+         <tr><th colspan="4">偏慢速的防守反击角色 实战更推荐作为副C抗压输出 做半个生存位 克罗双人组也可以单拆出来加入其他阵容 攻守兼备</th></tr>
          <tr><th style="background-color: black; font-size: 4px;" colspan="4">5</th></tr></div>
    </thead>
    <tbody>
+      <div><!-- 毁灭主 -->
+         <tr><th><div><!-- 毁灭主 -->
+                  <img id="背景" src="角色/金色.png">
+                  <img id="人物" src="角色/开拓者•毁灭.png">
+                  <img id="元素" src="元素/物理.png"></div></th>
+            <th><p>毁灭主</p><hr>主C/副C<hr><p>80</p></th>
+            <th colspan="2">常规主C/副C<br>前期过渡</th></tr>
+         <tr><th>大招>战技>天赋>普攻<hr>攻击</th>
+            <th>混沌</th><th>虚构</th><th>副本</th></tr>
+         <tr><th>关键星魂: 4 6</th>
+            <th id="A">A</th>
+            <th id="C">B</th>
+            <th id="A">A</th></tr>
+         <tr><th><div><!-- 开拓者 -->
+                  <img id="背景" src="角色/金色.png">
+                  <img id="人物" src="角色/开拓者•毁灭.png">
+                  <img id="元素" src="元素/物理.png"></div></th>
+            <th><div><!-- 花火 -->
+                  <img id="背景" src="角色/金色.png">
+                  <img id="人物" src="角色/花火.png">
+                  <img id="元素" src="元素/量子.png"></div></th>
+            <th><div><!-- 停云 -->
+                  <img id="背景" src="角色/紫色.png">
+                  <img id="人物" src="角色/停云.png">
+                  <img id="元素" src="元素/雷.png"></div></th>
+            <th><div><!-- 藿藿 -->
+                  <img id="背景" src="角色/金色.png">
+                  <img id="人物" src="角色/藿藿.png">
+                  <img id="元素" src="元素/风.png"></div></th></tr>
+         <tr><th colspan="4"><p3>配队思路：</p3>前期过渡用 后期不推荐练</th></tr>
+         <tr><th colspan="4">开局过渡使用的输出角色 前期表现尚可 后续建议培养其他输出角色</th></tr>
+         <tr><th style="background-color: black; font-size: 4px;" colspan="4">5</th></tr></div>
       <div><!-- 米沙 -->
          <tr><th><div><!-- 米沙 -->
+                  <img id="背景" src="角色/紫色.png">
                   <img id="人物" src="角色/米沙.png">
-                  <img id="元素" src="元素/冰.png">
-                  <span id="四星"></span></div></th>
-            <th><p>米沙</p2><hr>主C<hr><p>80</p></th>
+                  <img id="元素" src="元素/冰.png"></div></th>
+            <th><p2>米沙</p2><hr>主C<hr><p>80</p></th>
             <th colspan="2">常规主C</th></tr>
-         <tr><th>大招>战技>天赋>普攻<br>暴击>冰伤</th>
+         <tr><th>大招>战技>天赋>普攻<hr>暴击>冰伤</th>
             <th>混沌</th><th>虚构</th><th>副本</th></tr>
          <tr><th>关键星魂: 2 6</th>
             <th id="AA">A+</th>
             <th id="A">A</th>
             <th id="AA">A+</th></tr>
          <tr><th><div><!-- 米沙 -->
+                  <img id="背景" src="角色/紫色.png">
                   <img id="人物" src="角色/米沙.png">
-                  <img id="元素" src="元素/冰.png">
-                  <span id="四星"></span></div></th>
+                  <img id="元素" src="元素/冰.png"></div></th>
             <th><div><!-- 阮•梅 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/阮•梅.png">
-                  <img id="元素" src="元素/冰.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/冰.png"></div></th>
             <th><div><!-- 花火 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/花火.png">
-                  <img id="元素" src="元素/量子.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/量子.png"></div></th>
             <th><div><!-- 藿藿 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/藿藿.png">
-                  <img id="元素" src="元素/风.png">
-                  <span id="五星"></span></div></th></tr>
-         <tr><th colspan="4">配队思路：练度高可将藿藿替换为停云 依靠米沙冻结打三拐一</th></tr>
+                  <img id="元素" src="元素/风.png"></div></th></tr>
+         <tr><th colspan="4"><p3>配队思路：</p3>练度高可将藿藿替换为停云 依靠米沙冻结打三拐一</th></tr>
          <tr><th colspan="4">目前综合表现最佳的4星主C 机制优秀且出伤稳定可控 强度很高</th></tr>
          <tr><th style="background-color: black; font-size: 4px;" colspan="4">5</th></tr></div>
       <div><!-- 雪衣 -->
          <tr><th><div><!-- 雪衣 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/雪衣.png">
-                  <img id="元素" src="元素/量子.png">
-                  <span id="四星"></span></div></th>
-            <th><p>雪衣</p><hr>主C<hr><p>80</p></th>
+                  <img id="元素" src="元素/量子.png"></div></th>
+            <th><p>雪衣</p2><hr>主C<hr><p>80</p></th>
             <th colspan="2">常规主C<br>强削韧</th></tr>
-         <tr><th>大招>天赋>战技>普攻<br>击破>量子伤</th>
+         <tr><th>大招>天赋>战技>普攻<hr>击破>量子伤</th>
             <th>混沌</th><th>虚构</th><th>副本</th></tr>
          <tr><th>关键星魂: 2 6</th>
             <th id="AA">A+</th>
-            <th id="C">B</th>
+            <th id="AA">A+</th>
             <th id="AA">A+</th></tr>
          <tr><th><div><!-- 雪衣 -->
+                  <img id="背景" src="角色/紫色.png">
                   <img id="人物" src="角色/雪衣.png">
-                  <img id="元素" src="元素/量子.png">
-                  <span id="四星"></span></div></th>
+                  <img id="元素" src="元素/量子.png"></div></th>
             <th><div><!-- 阮•梅 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/阮•梅.png">
-                  <img id="元素" src="元素/冰.png">
-                  <span id="五星"></span></div></th>
-            <th><div><!-- 停云 -->
-                  <img id="人物" src="角色/停云.png">
-                  <img id="元素" src="元素/雷.png">
-                  <span id="四星"></span></div></th>
-            <th><div><!-- 符玄 -->
-                  <img id="人物" src="角色/符玄.png">
-                  <img id="元素" src="元素/量子.png">
-                  <span id="五星"></span></div></th></tr>
-         <tr><th colspan="4">配队思路: 阮梅的4星绑定C 无阮不推荐</th></tr>
-         <tr><th colspan="4">高削韧的击破流主C 无视弱点削韧 配合阮•梅拥有极强的输出能力</th></tr>
+                  <img id="元素" src="元素/冰.png"></div></th>
+            <th><div><!-- 开拓者•同谐 -->
+                  <img id="背景" src="角色/金色.png">
+                  <img id="人物" src="角色/开拓者•同谐.png">
+                  <img id="元素" src="元素/虚数.png"></div></th>  
+            <th><div><!-- 加拉赫 -->
+                  <img id="背景" src="角色/紫色.png">
+                  <img id="人物" src="角色/加拉赫.png">
+                  <img id="元素" src="元素/火.png"></div></th></tr>
+         <tr><th colspan="4"><p3>配队思路：</p3>阮梅的4星绑定C 无阮不推荐</th></tr>
+         <tr><th colspan="4">超击破流角色 配合阮梅和同谐主击破推条部分环境甚至可以将加拉赫替换为停云 顶掉生存位需求</th></tr>
          <tr><th style="background-color: black; font-size: 4px;" colspan="4">5</th></tr></div>
       <div><!-- 虎克 -->
          <tr><th><div><!-- 虎克 -->
+                  <img id="背景" src="角色/紫色.png">
                   <img id="人物" src="角色/虎克.png">
-                  <img id="元素" src="元素/火.png">
-                  <span id="四星"></span></div></th>
+                  <img id="元素" src="元素/火.png"></div></th>
             <th><p>虎克</p><hr>主C<hr><p>80</p></th>
             <th colspan="2">常规火系主C</th></tr>
-         <tr><th>战技>大招>天赋>普攻<br>暴伤>攻击</th>
+         <tr><th>战技>大招>天赋>普攻<hr>暴伤>攻击</th>
             <th>混沌</th><th>虚构</th><th>副本</th></tr>
          <tr><th>关键星魂: 4 6</th>
             <th id="A">A</th>
             <th id="C">B</th>
             <th id="A">A</th></tr>
          <tr><th><div><!-- 虎克 -->
+                  <img id="背景" src="角色/紫色.png">
                   <img id="人物" src="角色/虎克.png">
-                  <img id="元素" src="元素/火.png">
-                  <span id="四星"></span></div></th>
+                  <img id="元素" src="元素/火.png"></div></th>
             <th><div><!-- 桂乃芬 -->
+                  <img id="背景" src="角色/紫色.png">
                   <img id="人物" src="角色/桂乃芬.png">
-                  <img id="元素" src="元素/火.png">
-                  <span id="四星"></span></div></th>
+                  <img id="元素" src="元素/火.png"></div></th>
             <th><div><!-- 阮•梅 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/阮•梅.png">
-                  <img id="元素" src="元素/冰.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/冰.png"></div></th>
             <th><div><!-- 符玄 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/符玄.png">
-                  <img id="元素" src="元素/量子.png">
-                  <span id="五星"></span></div></th></tr>
-         <tr><th colspan="4">配队思路: 无阮梅用艾丝妲即可</th></tr>
+                  <img id="元素" src="元素/量子.png"></div></th></tr>
+         <tr><th colspan="4"><p3>配队思路：</p3>无阮梅用艾丝妲即可</th></tr>
          <tr><th colspan="4">由于艾丝妲和火主的存在 导致及时在弱火环境中虎克必要性也不高 实在缺C用或未来版本环境对火C有需求再考虑</th></tr>
          <tr><th style="background-color: black; font-size: 4px;" colspan="4">5</th></tr></div>
       <div><!-- 阿兰 -->
          <tr><th><div><!-- 阿兰 -->
+                  <img id="背景" src="角色/紫色.png">
                   <img id="人物" src="角色/阿兰.png">
-                  <img id="元素" src="元素/雷.png">
-                  <span id="四星"></span></div></th>
+                  <img id="元素" src="元素/雷.png"></div></th>
             <th><p>阿兰</p2><hr>副C/主C<hr><p>80</p></th>
             <th colspan="2">常规主C</th></tr>
-         <tr><th>战技=大招=天赋>普攻<br>攻击>抵抗</th>
+         <tr><th>战技=大招=天赋>普攻<hr>攻击>抵抗</th>
             <th>混沌</th><th>虚构</th><th>副本</th></tr>
          <tr><th>关键星魂: 6</th>
-            <th id="C">B</th>
             <th id="A">A</th>
+            <th id="C">B</th>
             <th id="A">A</th></tr>
          <tr><th><div><!-- 阿兰 -->
+                  <img id="背景" src="角色/紫色.png">
                   <img id="人物" src="角色/阿兰.png">
-                  <img id="元素" src="元素/雷.png">
-                  <span id="四星"></span></div></th>
+                  <img id="元素" src="元素/雷.png"></div></th>
             <th><div><!-- 停云 -->
+                  <img id="背景" src="角色/紫色.png">
                   <img id="人物" src="角色/停云.png">
-                  <img id="元素" src="元素/雷.png">
-                  <span id="四星"></span></div></th>
+                  <img id="元素" src="元素/雷.png"></div></th>
             <th><div><!-- 布洛妮娅 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/布洛妮娅.png">
-                  <img id="元素" src="元素/风.png">
-                  <span id="五星"></span></div></th>
+                  <img id="元素" src="元素/风.png"></div></th>
             <th><div><!-- 杰帕德 -->
+                  <img id="背景" src="角色/金色.png">
                   <img id="人物" src="角色/杰帕德.png">
-                  <img id="元素" src="元素/冰.png">
-                  <span id="五星"></span></div></th></tr>
-         <tr><th colspan="4">配队思路: 白身烧血 依赖护盾保护 保住生存的前提下提高拐力</th></tr>
+                  <img id="元素" src="元素/冰.png"></div></th></tr>
+         <tr><th colspan="4"><p3>配队思路：</p3>白身烧血 依赖护盾保护 保住生存的前提下提高拐力</th></tr>
          <tr><th colspan="4">数值比较优秀 不耗战技点使其可以充当副C定位 不过由于自身烧血 实战建议带足盾奶 深渊高层压力过大 阿兰有点顶不住</th></tr></div>
    </tbody>
 </table>

@@ -339,15 +339,22 @@ p2{
 	font-size: 26px;
 	color:red
 }
-#五星{
-	background-color: rgb(255, 230, 0);
+#背景{
+	display: block;
 	position: absolute;
-	left: 0px;
-	width: 100%;
-	height: 5px;
-	bottom: 5px;
+	padding: auto;
+	z-index: 1;
+}
+#人物{
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 2;
 }
 #四星{
+	z-index: 1;
 	background-color: rgb(240, 6, 248);
 	position: absolute;
 	left: 0px;
@@ -357,10 +364,11 @@ p2{
 }
 #元素{
 	position: absolute;
-	top: 9px;
+	top: 10px;
 	left: 3px;
 	width: 24px;
 	height: 24px;
+	line-height: 0;
 	z-index: 3;
 }
 /* 手机端 */
@@ -382,31 +390,6 @@ table tr th div img{
 	width: 75px;
 	height:75px;
 }
-
-th #五星{
-	background-color: rgb(255, 230, 0);
-	position: absolute;
-	left: 0px;
-	width: 75px;
-	height: 5px;
-	bottom: 2px;
-}
-th #四星{
-	background-color: rgb(240, 6, 248);
-	position: absolute;
-	left: 0px;
-	width: 75px;
-	height: 5px;
-	bottom: 2px;
-}
-th #元素{
-	position: absolute;
-	top: 10px;
-	left: 3px;
-	width: 16px;
-	height: 16px;
-	z-index: 3;
-}
 th p{
 	font-size: 20px;
 }
@@ -423,6 +406,16 @@ th #遗器{
 	position: relative;
 	top: -25px;
 	font-size: 20px;
+
+}
+#元素{
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 10px;
+	height: 10px;
+	line-height: 0;
+	z-index: 3;
 }
 @media screen and (max-width: 700px){
 table tr th img{
@@ -440,31 +433,5 @@ table tr th div img{
 	top: 0px;
 	width: 60px;
 	height:60px;
-}
-th #五星{
-	background-color: rgb(255, 230, 0);
-	position: absolute;
-	top: 60px;
-	left: 0px;
-	width: 60px;
-	height: 5px;
-	bottom: -4px;
-}
-th #四星{
-	background-color: rgb(240, 6, 248);
-	position: absolute;
-	top: 60px;
-	left: 0px;
-	width: 60px;
-	height: 5px;
-	bottom: -4px;
-}
-th #元素{
-	position: absolute;
-	top: 10px;
-	left: 3px;
-	width: 12px;
-	height: 12px;
-	z-index: 3;
 }
 }
