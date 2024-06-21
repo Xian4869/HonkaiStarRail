@@ -12,15 +12,16 @@
       var audio = document.getElementById('music');
          audio.start();
    }
-   function stop(){
+   function play(){
       var audio = document.getElementById('music');
-      if (audio.start){
-         document.getElementById('musicImg').src="流萤.png";
+      if (audio.paused){
+         audio.play();
+         document.getElementById('musicImg').src="黄泉.png";
       }
       else{
-         audio.pause()
+         audio.pause();
          audio.curruntTime = 0;
-         document.getElementById('musicImg').src="流萤.png"
+         document.getElementById('musicImg').src="黄泉.png"
       }
    }
 </script>
@@ -92,7 +93,7 @@
       <div><!-- 黄泉 -->
          <audio id="music" src="pendant.m4a" loop autoplay></audio>
          <tr><th><div><!-- 黄泉 -->
-                  <img id="人物" src="角色/黄泉.png"  onclick="stop()">
+                  <img id="人物" src="角色/黄泉.png"  onclick="play()">
                   <img id="元素" src="元素/雷.png">
                   <img id="背景" src="角色/金色.png"></div></th>
             <th><p>黄泉</p2><hr>主C<hr><p>80</p></th>
@@ -104,7 +105,7 @@
             <th id="SS">S+</th>
             <th id="SS">S+</th></tr>
          <tr><th><div><!-- 黄泉 -->
-                  <img id="人物" src="角色/黄泉.png"  onclick="stop()">
+                  <img id="人物" src="角色/黄泉.png"  onclick="play()">
                   <img id="元素" src="元素/雷.png">
                   <img id="背景" src="角色/金色.png"></div></th>
             <th><div><!-- 佩拉 -->
