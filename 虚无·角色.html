@@ -7,24 +7,6 @@
    <link rel="stylesheet" type="text/css" href="style.css">
    <link id="icon" rel="shortcut icon" href="logo.png">
 </head>
-<script>
-   window.onload = function(){
-      var audio = document.getElementById('music');
-         audio.autoplay();
-   }
-   function play(){
-      var audio = document.getElementById('music');
-      if (audio.paused){
-         audio.play();
-         document.getElementById('musicImg').src="黄泉.png";
-      }
-      else{
-         audio.pause();
-         audio.curruntTime = 0;
-         document.getElementById('musicImg').src="黄泉.png"
-      }
-   }
-</script>
 <body>
    <header class="header">
       <div class="container">
@@ -123,9 +105,8 @@
          <tr><th colspan="4">评价</th></tr>
          <tr><th style="background-color: black; font-size: 4px;" colspan="4">5</th></tr></div> -->
       <div><!-- 黄泉 -->
-         <audio id="music" src="pendant.m4a" loop autoplay></audio>
          <tr><th><div><!-- 黄泉 -->
-                  <img id="人物" src="角色/黄泉.png"  onclick="play()">
+                  <img id="人物" src="角色/黄泉.png">
                   <img id="元素" src="元素/雷.png">
                   <img id="背景" src="角色/金色.png"></div></th>
             <th><p>黄泉</p2><hr>主C<hr><p>80</p></th>
@@ -137,7 +118,7 @@
             <th id="SS">S+</th>
             <th id="SS">S+</th></tr>
          <tr><th><div><!-- 黄泉 -->
-                  <img id="人物" src="角色/黄泉.png"  onclick="play()">
+                  <img id="人物" src="角色/黄泉.png">
                   <img id="元素" src="元素/雷.png">
                   <img id="背景" src="角色/金色.png"></div></th>
             <th><div><!-- 佩拉 -->

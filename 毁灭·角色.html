@@ -7,24 +7,6 @@
    <link rel="stylesheet" type="text/css" href="style.css">
    <link id="icon" rel="shortcut icon" href="logo.png">
 </head>
-<script>
-   window.onload = function(){
-      var audio = document.getElementById('music');
-         audio.autoplay();
-   }
-   function play(){
-      var audio = document.getElementById('music');
-      if (audio.paused){
-         audio.play();
-         document.getElementById('musicImg').src="流萤.png";
-      }
-      else{
-         audio.pause();
-         audio.curruntTime = 0;
-         document.getElementById('musicImg').src="流萤.png"
-      }
-   }
-</script>
 <body>
    <header class="header">
       <div class="container">
@@ -123,10 +105,9 @@
          <tr><th colspan="4">评价</th></tr>
          <tr><th style="background-color: black; font-size: 4px;" colspan="4">5</th></tr></div> -->
       <div><!-- 流萤 -->
-         <audio id="music" src="videoplayback.m4a" loop autoplay></audio>
          <tr><th><div><!-- 流萤 -->
                   <img id="背景" src="角色/金色.png">
-                  <img id="人物" src="角色/流萤.png"  onclick="play()">
+                  <img id="人物" src="角色/流萤.png">
                   <img id="元素" src="元素/火.png"></div></th>
             <th><p2>流萤</p2><hr>主C<hr><p>80</p></th>
             <th colspan="2">超击破驾驶员</th></tr>
@@ -138,7 +119,7 @@
             <th id="?">评价中</th></tr>
          <tr><th><div><!-- 流萤 -->
                   <img id="背景" src="角色/金色.png">
-                  <img id="人物" src="角色/流萤.png" onclick="play()">
+                  <img id="人物" src="角色/流萤.png">
                   <img id="元素" src="元素/火.png"></div></th>
             <th><div><!-- 阮•梅 -->
                   <img id="背景" src="角色/金色.png">
